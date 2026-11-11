@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>神经多样性光谱 · 你的大脑怎么运作</title>
+<meta name="description" content="42 个日常瞬间，画出你的七维大脑光谱：漂移、启动、冲动、感官、社交、秩序、深潜。自我观察向，不作为任何医学结论。">
+<link rel="stylesheet" href="style.css?v=20261111">
+</head>
+<body>
+
+<!-- 封面 -->
+<section class="page active" id="pg-cover">
+  <div class="cover">
+    <div class="cv-seal serif">脑</div>
+
+    <div class="cv-kicker">NEURO · SPECTRUM</div>
+
+    <h1 class="cv-title serif">你的<br><span class="hl">大脑</span><br>光谱</h1>
+
+    <p class="cv-sub">不是你怪，<br>是你的默认设置和世界不太一样。</p>
+
+    <div class="cv-tags">
+      <div class="cv-row"><span>漂移</span><span>启动</span><span>冲动</span><span>感官</span></div>
+      <div class="cv-row"><span>社交</span><span>秩序</span><span>深潜</span></div>
+    </div>
+
+    <div class="cv-meta">
+      <span><b id="q-total-all">42</b> 道情境题</span>
+      <i></i>
+      <span><b>7</b> 维光谱</span>
+      <i></i>
+      <span><b>9</b> 种运作方式</span>
+    </div>
+
+    <button class="btn-main cv-btn" id="btn-start">开 始 测 试</button>
+
+    <p class="cv-privacy">🔒 全程本地运行，答案不上传任何服务器</p>
+    <p class="cv-disc">自我观察向内容，读数只是倾向描述，不作为任何医学结论</p>
+  </div>
+</section>
+
+<!-- 答题 -->
+<section class="page" id="pg-quiz">
+  <div class="quiz">
+    <div class="q-head">
+      <div class="q-num"><span id="q-idx">01</span><span id="q-total">/ 42</span></div>
+      <div class="q-track"><div class="q-bar" id="q-bar"></div></div>
+    </div>
+    <div class="q-body">
+      <h2 class="q-text" id="q-text"></h2>
+      <div class="q-opts" id="q-opts"></div>
+    </div>
+    <div class="q-foot">
+      <button class="btn-back" id="btn-back">上一题</button>
+    </div>
+  </div>
+</section>
+
+<!-- 加载 -->
+<section class="page" id="pg-loading">
+  <div class="loading">
+    <div class="ld-ring"><i></i><i></i><i></i></div>
+    <div class="ld-step" id="ld-step">读取你的作答轨迹</div>
+    <div class="ld-dots"><span class="ld-dot on"></span><span class="ld-dot"></span><span class="ld-dot"></span><span class="ld-dot"></span></div>
+    <p class="ld-tip">正在把 42 个瞬间，画成一条光谱</p>
+  </div>
+</section>
+
+<!-- 结果 -->
+<section class="page" id="pg-result">
+  <div class="result-scroll" id="result-scroll"></div>
+</section>
+
+<script src="data-nd.js?v=20261111"></script>
+<script src="app.js?v=20261111"></script>
+</body>
+</html>
